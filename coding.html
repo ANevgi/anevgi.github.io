@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coding</title>
+    <link href="coding.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video src="videos/coding.mp4" autoplay muted="" loop="">
+      </video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <h1>Coding</h1>
+        <p>Random Coding Stuff</p>
+        <a href="https://github.com/anevgi" class="btn"><img src="https://png.icons8.com/small/50/000000/github.png"></a>
+      </div>
+      </div>
+    </header>
+
+    <section class="section section-a">
+      <div class="container">
+        <h1>More</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="section section-b">
+      <div class="container">
+        <h1>Coming</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="section section-c">
+      <div class="container">
+        <h1>Soon...</h1>
+        <p></p>
+      </div>
+    </section>
+
+  </body>
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</html>
