@@ -8,20 +8,38 @@
 	<link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-	<div class="container">
-		<div class="split left">
-			<h1>Gaming</h1>
-			<a href="gaming.html" class="button">Read More</a>
-		</div>
-		<div class="split right">
-			<h1>Coding</h1>
-			<a href="coding.html" class="button">Read More</a>
-		</div>
+
+<div class="container">
+	<div class="split left">
+		<h1>Gaming</h1>
+		<a href="gaming.html" class="button">Read More</a>
 	</div>
+	<div class="split right">
+		<h1>Coding</h1>
+		<a href="coding.html" class="button">Read More</a>
+	</div>
+</div>
+<body>
+	<section id="section-a">
+		<h1>About</h1>
+		<p id="p01">Welcome to my website! I will be uploading programming projects and other stuff soon!</p>
+		<a href="#" id="topBtn" onclick="goTop()" title="Back to Top">Back to Top</a>
+	</section>
+	<script>
+		function goTop() {
+      document.body.scrollTop = 0;
+      document.documentElement = 0;
+    }
 
+    function scrollManager() {
+      if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        document.getElementById("topBtn").style.display = "block";      
+      }else{
+        document.getElementById("topBtn").style.display = "none";
+        }
+  }  
+  window.onscroll = function() {scrollManager()};
+	</script>
 	<script src="index.js"></script>
-
 </body>
-
 </html>
