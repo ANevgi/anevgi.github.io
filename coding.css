@@ -153,6 +153,10 @@ body {
     right: 0;
     top: 0;
   }
+  .section-a img {
+    width: 100px;
+    height: auto;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
