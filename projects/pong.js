@@ -30,7 +30,7 @@ function draw() {
 	}
 	
 	if ((xBall > xPaddle && xBall < xPaddle + paddleWidth) && (yBall + (diameter/2) >= yPaddle)) {
-  	xBallChange = (xBallChange + 0.5) * -1;
+  	xBallChange = (xBallChange + 0.5) * 1;
   	yBallChange = (yBallChange + 0.5) * -1;
 		score ++;
 	}
